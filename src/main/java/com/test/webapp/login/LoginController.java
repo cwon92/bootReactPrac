@@ -19,13 +19,13 @@ public class LoginController {
 	}
 
 	
-	@RequestMapping(value="login",method = RequestMethod.GET)
+	@RequestMapping(value="/login",method = RequestMethod.GET)
 	public String gotoLoginPage() {
 		return "login";
 	}
 
 
-	@RequestMapping(value="login",method = RequestMethod.POST)
+	@RequestMapping(value="/login",method = RequestMethod.POST)
 	//login?name=Ranga RequestParam
 	public String gotoWelcomePage(@RequestParam String name, 
 			@RequestParam String password, ModelMap model) {
